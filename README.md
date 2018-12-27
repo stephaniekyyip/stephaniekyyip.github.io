@@ -1,5 +1,5 @@
-# My Website (Latest Version, v2)
-The second version of my website that aims to modularize the code and make the website easier to read and maintain.
+# My Website (Latest Version, v3)
+This is the latest version of my web portfolio, which uses Jekyll, SASS, Gulp, and vanilla JavaScript.
 
 ## Dependancies
 - Ruby: `brew install ruby` (on Mac via Homebrew)
@@ -7,12 +7,7 @@ The second version of my website that aims to modularize the code and make the w
 - Jekyll: `gem install bundler jekyll`
 - Gulp: `npm install -g gulp-cli`
 
-## Issues
-- IE 11
-  - CSS grid issues with text in footer + resume page
-
 ## Set-Up
-- Install: `gem install && npm install`
-- Update: `bundle update && npm update`
+- Install: `bundle install && npm install`
 - Development: `gulp dev`
 - Production: `gulp build`

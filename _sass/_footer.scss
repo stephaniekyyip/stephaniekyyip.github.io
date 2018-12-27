@@ -1,11 +1,4 @@
-.social-icons{
-  display: none;
-}
-
-footer {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
+ footer {
   padding: 15px 20px 15px 20px;
   background: $medium;
   left: 0;
@@ -15,33 +8,7 @@ footer {
 
   h1 {
     @extend %outer-text;
-    padding-right: 15px;
-    text-align: left;
-    grid-row: 1;
-    grid-column: 1;
+    text-align: center;
+    display: block;
   }
-
-  li {
-    display: inline;
-    padding-left: 20px;
-    font-size: 14px;
-
-    &:first-child{
-      padding-left: 0;
-    }
-
-    a {
-      @extend %outer-text;
-
-      &:hover{
-        @extend %link-hover;
-      }
-    }
-  }
-}
-
-.social-links {
-  text-align: right;
-  grid-row: 1;
-  grid-column: 2;
 }

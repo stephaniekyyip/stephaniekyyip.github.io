@@ -1,0 +1,20 @@
+<section id = "contact">
+  <h1>Contact</h1>
+
+  <div class = "contact-icons">
+    {% for item in site.data.social %}
+      <a href = "{{ item.link }}" target="_blank"><i class = "{{ item.icon }}" alt = "{{ item.name }}"></i></a>
+    {% endfor %}
+
+  </div>
+
+  <p>
+    Questions? Want to get in touch? The best way to reach me is via e-mail at <a href = "mailto:stephaniekyyip@gmail.com" target="_blank">stephaniekyyip@gmail.com</a>.
+  </p>
+
+  <p>
+    I'm currently looking for software or computer engineering opportunities based in Oahu, Hawaii or remote.
+    At this time, I am not interested in relocation.
+  </p>
+
+</section>

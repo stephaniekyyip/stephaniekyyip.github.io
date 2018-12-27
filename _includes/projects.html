@@ -1,0 +1,19 @@
+<section id = "projects">
+  <h1>Projects</h1>
+
+  <div class = "proj-container">
+    {% for proj in site.data.projects %}
+        <div class = "proj-block">
+          <div class = "proj-title">{{ proj.title }}</div>
+          <div class = "proj-subtitle">{{ proj.subtitle }}</div>
+          <div class = "proj-tech">
+            {% for tech in proj.tech %}
+              <div class = "proj-tech-single">{{ tech.item }}</div>
+            {% endfor %}
+          </div>
+          <img class = "proj-img" alt = "{{ proj.alt }}" src = "{{site.url}}/assets/img/projects/{{ proj.img }}"/>
+          <div class = "proj-btn-container"><a href = "/projects/{{ proj.link }}{% if site.url == 'http://localhost:4000' %}.html{% endif %}" class = "btn">Details <i class="fas fa-arrow-right"></i></a></div>
+        </div>
+    {% endfor %}
+  </div>
+</section>

@@ -1,5 +1,7 @@
-.icon-nav{
+// Show/ hide hamburger icon to access menu
+.icon-nav {
   display: none;
+  transition: all 1s;
 }
 
 header {
@@ -8,19 +10,34 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: $medium;
-  box-shadow: 0 2px 5px $grayOpacity;
+  background-color: none;
+  transition: background-color 0.5s;
 
   h1 {
     @extend %outer-text;
-    font-weight: 700;
     word-spacing: 5px;
     float: left;
     padding: 15px 15px 15px 20px;
+    
   }
 }
 
+// Turn the nav bar opaque when scrolled down
+.opaque {
+  background-color: $medium;
+  box-shadow: 0 1px 10px $grayOpacity;
+  transition: background-color 0.5s;
+}
+
+// Hide the name when the nav bar is not opaque
+.hide-name {
+  visibility: hidden;
+}
+
+// ---------------------------------------------------------------------------
 // Nav Bar
+// ---------------------------------------------------------------------------
+
 nav {
   ul {
     padding: 15px 20px 15px 15px;
@@ -31,6 +48,7 @@ nav {
     display: inline;
     padding-left: 20px;
     font-size: 14px;
+    user-select: none;
 
     &:first-child{
       padding-left: 0;
@@ -47,18 +65,28 @@ nav {
 
   .active {
     @extend %link-hover;
+    font-weight: 700;
+    transition: all 0.5s;
   }
 }
 
-// Responsive Nav Bar
+// ---------------------------------------------------------------------------
+// Mobile Nav Bar
+// ---------------------------------------------------------------------------
+
 #menu-icon:hover {
   cursor: pointer;
 }
 
-#icon-nav-links {
+.icon-nav-active {
+  color: $accent;
+  transition: all 1s;
+}
+
+.icon-nav-links {
   @extend %outer-text;
+  transition: opacity 0.4s ease-out, height 0.4s ease-out, visibility 0.4s ease-out 0.4s;
   border-top: 1px solid $accent;
-  box-shadow: 0 2px 5px $grayOpacity;
   background-color: $mediumOpacity;
   position: absolute;
   right: 0;
@@ -66,14 +94,18 @@ nav {
   top: 46px;
   text-align: center;
   width: 100%;
-  display: none;
-
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  
   ul {
     padding: 15px 20px 15px 20px;
   }
 
   li {
     padding: 30px 0 0 0;
+    display: block;
+    user-select: none;
 
     &:first-child {
       padding: 20px 0 0 0;
@@ -87,10 +119,17 @@ nav {
   a {
     color: white;
     text-decoration: none;
-    text-shadow: 0 2px $lightGray;
 
     &:hover {
       @extend %link-hover;
     }
   }
+}
+
+// Show/ hide links when clicking hamburger icon
+.display-icon-menu {
+  opacity: 1;
+  height: 470%;
+  transition: opacity 0.4s ease-out, height 0.4s ease-out;
+  visibility: visible;
 }

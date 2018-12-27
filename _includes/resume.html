@@ -1,0 +1,22 @@
+<section id = "resume">
+  <h1>Résumé</h1>
+
+  <div class = "resume-container">
+    
+    {% for entry in site.data.resume_work %}
+    <div class = "resume-org">{{ entry.org }}</div>
+    <div class = "resume-dates">{{ entry.dates }}</div>
+    <div class = "resume-role">{{ entry.role }}</div>
+    <div class = "resume-list">
+      <ul>
+        {% for description in entry.description %}
+        <li>{{ description.item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+    <div class = "resume-btn-center"><a href = "{{ site.url}}/assets/StephanieYip_Resume_Dec2018.pdf" target="_blank" class = "btn">See Full Résumé</a></div>
+
+  </div>
+
+</section>
