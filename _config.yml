@@ -19,7 +19,7 @@ title: Stephanie Yip | Computer Engineer
 description: >- # this means to ignore newlines until "baseurl:"
   Website for Stephanie Yip, a computer engineer interested in software and learning new things.
 baseurl: "/"
-url: "http://localhost:4000"
+url: "https://stephaniekyyip.com"
 
 # Build settings
 markdown: kramdown

@@ -35,5 +35,10 @@
   "dependencies": {
     "gulp": "^4.0.0",
     "npm": "^6.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "gulp build"
+    }
   }
 }
