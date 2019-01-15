@@ -23,9 +23,13 @@ url: "https://stephaniekyyip.com"
 
 # Build settings
 markdown: kramdown
-# plugins:
-#   - jekyll-feed
+plugins:
+  - jekyll-redirect-from
+# - jekyll-feed
 include: ['_pages', '_scripts']
+
+# whitelist:
+#   - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
