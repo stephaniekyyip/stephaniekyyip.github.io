@@ -26,7 +26,7 @@ markdown: kramdown
 plugins:
   - jekyll-redirect-from
 #   - jekyll-feed
-include: ['_pages', '_scripts']
+include: ['_pages', '_scripts', '_includes']
 
 # Serve settings
 host: localhost
@@ -44,6 +44,7 @@ exclude:
  - package.json
  - _pages/old_stuff/*
  - _includes/old_stuff/*
+ - old_stuff/*
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/

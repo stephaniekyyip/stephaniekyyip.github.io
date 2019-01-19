@@ -41,6 +41,7 @@ exclude:
  - package.json
  - _pages/old_stuff/*
  - _includes/old_stuff/*
+ - old_stuff/*
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
