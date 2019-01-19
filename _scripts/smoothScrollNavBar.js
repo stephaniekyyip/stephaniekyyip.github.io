@@ -13,13 +13,15 @@ function scrollToSection(event) {
 
   const link = this.getAttribute('href').split('/')[1];
   const section = document.querySelector(link);
-  const yPos = document.documentElement.scrollTop;
+  const yPos = document.body.scrollTop || document.documentElement.scrollTop || document.scrollingElement.scrollTop;
   const distance = section.offsetTop - yPos;
   let count = 0;
 
   // Smooth scroll
   let scroll = setInterval(function(){
     document.documentElement.scrollTop = yPos + distance * smoothStep(count/40);
+    document.body.scrollTop = yPos + distance * smoothStep(count/40);
+    document.scrollingElement.scrollTop = yPos + distance * smoothStep(count/40);
     count++;
     if(count > 40){
       clearInterval(scroll);

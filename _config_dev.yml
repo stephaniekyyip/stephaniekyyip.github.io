@@ -23,12 +23,16 @@ url: "http://localhost:4000"
 
 # Build settings
 markdown: kramdown
-# plugins:
+plugins:
+  - jekyll-redirect-from
 #   - jekyll-feed
-include: ['_pages', '_scripts']
+include: ['_pages', '_scripts', '_includes']
 
 # Serve settings
 host: localhost
+
+# whitelist:
+#   - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -40,6 +44,7 @@ exclude:
  - package.json
  - _pages/old_stuff/*
  - _includes/old_stuff/*
+ - old_stuff/*
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/

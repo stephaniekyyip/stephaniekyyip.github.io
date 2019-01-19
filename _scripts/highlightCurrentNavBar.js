@@ -3,7 +3,7 @@
 // ----------------------------------------------------------------------------
 
 function highlightCurrent(){
-  const yPos = document.documentElement.scrollTop;
+  const yPos = document.body.scrollTop || document.documentElement.scrollTop || document.scrollingElement.scrollTop;
   const navArr = ['About', 'Résumé', 'Projects', 'Contact'];
   const sectionArr = ['about', 'resume', 'projects', 'contact'];
   let currSection, nextSection, prevSection, currNav, nextNav, prevNav;
