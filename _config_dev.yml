@@ -19,6 +19,7 @@ title: Stephanie Yip | Computer Engineer
 description: >- # this means to ignore newlines until "baseurl:"
   Website for Stephanie Yip, a computer engineer interested in software and learning new things.
 baseurl: ""
+#url: "http://192.168.29.120:4000" #to test on mobile
 url: "http://localhost:4000"
 
 # Build settings
