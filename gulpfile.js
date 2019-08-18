@@ -2,7 +2,7 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const cssnano = require('gulp-cssnano');
+const cleancss = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify-es').default;
 const browsersync = require('browser-sync').create();
@@ -59,7 +59,7 @@ function css(){
     browsers: ['last 2 versions'],
     cascade: false
   }))
-  .pipe(cssnano())
+  .pipe(cleancss({compatibility: 'ie8'}))
   .pipe(gulp.dest('./_site/assets/css'))
   .pipe(gulp.dest('./assets/css'))
   .pipe(browsersync.stream());
@@ -82,7 +82,7 @@ function images() {
       imagemin.jpegtran({progressive:true}),
       imagemin.optipng({optimizationlevel:5})
     ]))
-    .pipe(gulp.dest('./_site/assets/img'))
+    .pipe(gulp.dest('./_site/assets/img'));
 }
 
 // Watch
