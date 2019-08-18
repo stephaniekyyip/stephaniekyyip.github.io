@@ -1,3 +1,20 @@
+- org: Oceanit
+  dates: June 2019 - Present
+  role: Software/ Electrical Engineer
+  description:
+    - item: >
+        Working on a computer vision program written using C++ and Qt and 
+        several embedded software projects involving signal processing
+
+- org: Jun Innovations Inc.
+  dates: Feb 2019 - May 2019
+  role: Research Technician
+  description:
+    - item: Worked at a start-up centered on food preservation using supercooling technology with electromagnetic fields
+    - item: >
+        Improved Arduino code used in experiments by refactoring and consolidating the existing code and creating
+        an user interface to allow users to set experimental variables and settings
+
 - org: Boeing
   dates: Aug 2017 - Aug 2018
   role: Software Engineer
@@ -14,5 +31,5 @@
         ARM microcontroller
     - item: >
         Modified embedded software in C to configure the microcontroller for signal processing
-    - item: >
-        Tested and verified signal processing results using MATLAB and an oscilloscope
+    # - item: >
+    #     Tested and verified signal processing results using MATLAB and an oscilloscope

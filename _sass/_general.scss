@@ -161,11 +161,11 @@ section:last-of-type {
 // Contact section
 // ----------------------------------------------------------------------------
 .contact-icons {
-  display: grid;
+  display: flex;
   font-size: 30px;
   margin: 0 auto 25px auto;
   text-align: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-evenly;
 
   a:hover {
     border: none;
