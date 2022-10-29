@@ -26,7 +26,7 @@ markdown: kramdown
 plugins:
   - jekyll-redirect-from
 # - jekyll-feed
-#include: ['_pages', '_scripts'] # !! Need to uncomment to include these!
+include: ['_pages', '_scripts']
 
 # whitelist:
 #   - jekyll-redirect-from

@@ -1,4 +1,5 @@
-# Website (Under Construction)
+# My Website (Latest Version, v3)
+This is the latest version of my web portfolio, which uses Jekyll, SASS, Gulp, and vanilla JavaScript.
 
 ## Dependancies
 - Ruby: `brew install ruby` (on Mac via Homebrew)
