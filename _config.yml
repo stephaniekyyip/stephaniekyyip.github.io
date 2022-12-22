@@ -39,12 +39,10 @@ exclude:
  - Gemfile.lock
  - node_modules
  - package.json
-#  - _pages/old_stuff/*
+ - _pages/old_stuff/*
  - _includes/old_stuff/*
  - old_stuff/*
- - _pages/*
- - _includes/*
- - _data/*
+
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
